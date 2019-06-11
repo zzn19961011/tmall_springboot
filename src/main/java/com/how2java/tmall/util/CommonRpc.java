@@ -11,7 +11,7 @@ import com.aliyuncs.profile.DefaultProfile;
 public class CommonRpc {
 
     public int sendMSG(String mobile,String code) {
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou",  "", "");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou",  "", "");//key从阿里云获取
         IAcsClient client = new DefaultAcsClient(profile);
 
         CommonRequest request = new CommonRequest();
